@@ -66,7 +66,7 @@ create table requisicoes (
     ativo boolean,
 );
 
-ccreate table itens_da_requisicao (
+create table itens_da_requisicao (
     id_item_da_requisicao int not null primary key auto_increment,
     quantidade_solicitada int,
 );
@@ -122,4 +122,16 @@ create table pessoas (
     status varchar(50),
     endereco varchar(200),
     ativo boolean,
+);
+
+create table funcionario (
+
+    CNH varchar(20),
+    categoria_CNH varchar(5),
+    status_local varchar(50),
+);
+
+create table gerente (
+    setor varchar(50),
+    salario decimal(10,2),
 );
